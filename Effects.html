@@ -1,0 +1,75 @@
+<!Doctype html>
+
+<html>
+<head><title>Effects</title>
+<style>button{
+display:inline-block;
+margin:10px
+
+}</style>
+</head>
+<body>
+<h1>Effects</h1>
+
+
+
+<button class = "hide">hide</button>
+<button class = "show">show</button>
+<button class = "toggle">toggle</button>
+<button class = "slideup">slideup</button>
+<button class = "slidedown">slidedown</button>
+<button class = "slidetoggle">slidetoggle</button>
+<button class = "fadein">fadein</button>
+<button class = "fadeout">fadeout</button>
+
+
+<div style="height:250px;width:500px;background:red;marigin-bottom:25px"></div>
+
+
+
+<script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  
+  <script>
+$(".hide").click(function(){
+$("div").hide();
+});
+
+$(".show").click(function(){
+$("div").show();
+});
+
+$(".toggle").click(function(){
+$("div").toggle();
+});
+
+$(".slideup").click(function(){
+$("div").slideUp();
+});
+
+
+$(".slidedown").click(function(){
+$("div").slideDown();
+});
+
+$(".slidetoggle").click(function(){
+$("div").slideToggle();
+});
+
+$(".fadein").click(function(){
+$("div").fadeIn();
+});
+
+$(".fadeout").click(function(){
+$("div").fadeOut();
+});
+
+
+
+
+
+</script>
+</body>
+</html>

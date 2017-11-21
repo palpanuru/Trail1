@@ -1,0 +1,55 @@
+<!Doctype html>
+
+<html>
+<head><title>Animation</title>
+<style>button{
+display:inline-block;
+margin:10px
+
+}</style>
+</head>
+<body>
+<h1>Animate</h1>
+<h1>Trying Git in this file</h1>
+
+
+<button class = "move">move</button>
+<button class = "grow">grow</button>
+<button class = "shrink">shrink</button>
+<button class = "reset">reset</button>
+
+
+<div style="height:250px;width:500px;background:red;marigin:25px"></div>
+
+
+
+<script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  
+  <script>
+$(".move").click(function(){
+$("div").animate({"margin":'300px'}, "fasst");
+});
+
+$(".grow").click(function(){
+$("div").animate({"height":'350px',"width":'650px'},"slow");
+});
+
+$(".shrink").click(function(){
+$("div").animate({"height":'50px',"width":'50px'},"slow");
+});
+
+$(".reset").click(function(){
+$("div").animate({"marigin":'25px',"width":'500px',"height":'250px'},"fast");
+});
+
+
+
+
+
+
+</script>
+</body>
+</html>
